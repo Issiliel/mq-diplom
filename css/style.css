@@ -50,6 +50,7 @@ a {
 .popup-container {
   position: relative;
   max-width: 390px;
+  max-height: 100vh;
 }
 
 .popup-close {
@@ -272,7 +273,7 @@ input {
 .trends-body {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .trends-list {
@@ -838,6 +839,10 @@ aside {
     height: 30px;
   }
 
+  .popup-feedback {
+    margin-top: 35px;
+  }
+
   .header {
     padding-top: 40px;
     background-image: url(../img/banner-bg-tablet.jpg);
@@ -902,6 +907,15 @@ aside {
 
 @media (max-width: 640px),
 (max-width: 767px) and (orientation: landscape) {
+  .popup-close {
+    width: 30px;
+    height: 30px;
+  }
+
+  .popup-feedback {
+    margin-top: 35px;
+  }
+
   .header {
     padding: 40px 15px 219px;
     background-image: url(../img/banner-mobile.jpg);
